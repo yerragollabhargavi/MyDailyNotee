@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384- JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="todos-bg-container1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 bg-container " id="sectionMain">
+                    <h1 class="typo">Welcome To Todos Application</h1>
+                    <p class="typo">Acheive your things by daily notes</p>
+                    <p class="typo">Get Started With ToDo</p>
+
+                    <div class="d-flex flex-row justify-content-end">
+                        <div class=" image-container">
+                            <h1 class="typo">Make Your Day Planned</h1>
+                            <p class="typo">with all your things to do ☺️</p>
+                            <hr class="horizontal-line1" />
+                            <hr class="horizontal-line1" />
+                        </div>
+                    </div>
+                    <img src="https://www.shinesheets.com/wp-content/uploads/2018/04/To-Do-List-Printable-21.jpg" class="image" />
+                    <div class=" d-flex flex-row justify-content-end">
+                        <button class="btn btn-primary" onclick="display('sectionTodo')">Go To ToDo </button><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="todos-bg-container" id="sectionTodo">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="todos-heading">Todos</h1>
+                    <h1 class="create-task-heading">
+                        Create <span class="create-task-heading-subpart">Task</span>
+                    </h1>
+                    <input type="text" id="todoUserInput" class="todo-user-input" placeholder="What needs to be done?" />
+
+                    <button class="add-todo-button" id="addBtn">Add</button>
+                    <h1 class="todo-items-heading">
+                        My <span class="todo-items-heading-subpart">Tasks</span>
+                    </h1>
+                    <ul class="todo-items-container" id="todoItemsContainer"></ul>
+                </div>
+                <button class="add-todo-button " id="button">Save</button>
+
+                <div class="d-flex flex-row justify-content-end">
+                    <button class="add-todo-button" id="button" onclick="display('sectionMain')">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
